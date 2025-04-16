@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="a propos.html">À propos</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+  .navbar {
+    width: 100%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+  }
+</style>
+
+
+<section>
+  <h2>Contactez-moi</h2>
+  
+<form class="contact-form">
+  <label for="nom">Nom</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label for="prenom">Prénom</label>
+  <input type="text" id="prenom" name="prenom" required>
+
+  <label for="message">Votre message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <label for="tel">Téléphone</label>
+  <input type="text" id="tel" name="tel" value="+226 54965427" readonly>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+</section>
+
+</body>
+</html>

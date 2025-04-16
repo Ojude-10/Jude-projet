@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétences</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+<div style="text-align: center; padding: 10px;">
+  
+
+
+
+<style>
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+</style>
+
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="a propos.html">À propos</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<style>
+  .navbar {
+    width: 100%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+  }
+</style>
+
+
+
+<style>
+.skills {
+    max-width: 600px;
+    margin: auto;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.skill label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+}
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    animation: progressAnim 1.5s ease-out forwards;
+}
+@keyframes progressAnim {
+    from { width: 0; }
+    to { width: var(--target-width); }
+}
+</style>
+
+
+<div class="skills fade-in">
+    <h2>Compétences</h2>
+    <div class="skill">
+        <label>HTML</label>
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+        <label>CSS</label>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+    </div>
+    <div class="skill">
+        <label>JavaScript</label>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+    </div>
+    <div class="skill">
+        <label>PHP</label>
+        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+    </div>
+</div>
+
+  <h1 class="section-title">Mes Compétences</h1>
+  <div class="carousel">
+    <div class="carousel-track">
+      <div class="competence-card html">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+        <div class="progress-bar"><div style="width: 90%"></div></div>
+      </div>
+      <div class="competence-card css">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <div class="progress-bar"><div style="width: 85%"></div></div>
+      </div>
+      <div class="competence-card js">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div style="width: 70%"></div></div>
+      </div>
+      <div class="competence-card php">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+        <div class="progress-bar"><div style="width: 80%"></div></div>
+      </div>
+    </div>
+    <button class="carousel-btn prev">&lt;</button>
+    <button class="carousel-btn next">&gt;</button>
+  </div>
+
+  
+
+
+
+
+</body>
+</html>
